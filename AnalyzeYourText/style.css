@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    transition: 0.5s;
+}
+
+.header .headerItens {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 150px;
+    width: 100%;
+}
+
+.header .headerItens #darkMode {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    padding: 5px;
+    align-items: center;
+}
+
+.header .headerItens #darkMode:hover {
+    border-radius: 5px;
+    background-color: rgb(241, 241, 241);
+    cursor: pointer;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: 0.7s;
+}
+
+.article .articleItens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.article .articleItens .subTitle {
+    width: 100%;
+    font-size: 50px;
+    text-align: center;
+}
+
+.article .articleItens .inputBox {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    padding: 7px 0px;
+}
+
+.article .articleItens .inputBox textarea{
+    width: 100%;
+    padding: 5px 10px;
+    padding-bottom: 150px;
+    font-size: 12px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+    background-color: #e8eeee;
+}
+
+.article .articleItens .informations {
+    display: flex;
+    align-items: start;
+    width: 100%;
+    max-width: 600px;
+    padding-right: 25px;
+    margin-bottom: 35px;
+}
+
+.article .articleItens .informations input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 14px;
+    height: 14px;
+    border: 2px solid #b3b3b3;
+    border-radius: 4px;
+    background-color: transparent;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+}
+
+.article .articleItens .informations input[type="checkbox"]:checked {
+    background-color: #b3b3b3;
+    border-color: #b3b3b3;
+}
+
+.article .articleItens .informations input[type="checkbox"]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6px;
+    height: 6px;
+    background-color: transparent;
+    transform: translate(-50%, -50%);
+    border-radius: 2px;
+    opacity: 0;
+}
+  
+.article .articleItens .informations input[type="checkbox"]:checked::after {
+    opacity: 1;
+}
+
+.article .articleItens .informations label{
+    font-size: 10px;
+    font-weight: bold;
+    margin: 0;
+    padding-left: 5px;
+    padding-right: 15px ;
+}
+
+.article .articleItens .informations p{
+    font-size: x-small;
+    font-weight: bold;
+    padding-left: 160px;
+}
+
+.article .articleItens .textInformations {
+    display: flex;
+    width: 50%;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.article .articleItens .textInformations div{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    min-width: 100px;
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.article .articleItens .textInformations .totalCharacters{
+   background-color: #b892f7;
+   padding: 10px;
+   border-radius: 10px;
+}
+
+.article .articleItens .textInformations p{
+    color: black;
+    font-weight: bolder;
+}
+
+.article .articleItens .textInformations .number {
+    font-size: 48px;
+}
+
+.article .articleItens .textInformations .description{
+    font-weight: lighter;
+    font-size: 14px;
+}
+
+.article .articleItens .textInformations .wordCount{
+   background-color: #ffc107;
+   padding: 10px;
+   color: black;
+   border-radius: 10px;
+}
+
+
+.article .articleItens .textInformations .sentenceCount{
+   background-color: #ff6738;
+   padding: 10px;
+   color: black;
+   border-radius: 10px;
+}
+
+.article .articleItens .charts {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+}
+
+.article .articleItens .charts h4{
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.article .articleItens .charts .rangeBox {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+}
+.rangeBox p.key {
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 5px;
+}
+
+.rangeBox input[type="range"] {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(to right, #c084fc var(--progress, 0%), #2a2a2a var(--progress, 0%));
+    border-radius: 5px;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+}
+
+.rangeBox input[type="range"]::-webkit-slider-runnable-track {
+    height: 8px;
+    background: linear-gradient(to right, #c084fc var(--progress, 0%), #2a2a2a var(--progress, 0%));
+    border-radius: 5px;
+}
+
+.rangeBox input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 0px;
+    height: 0px;
+    background: transparent;
+}
+
+.rangeBox input[type="range"]:focus {
+    background: #ccc;
+}
+
+.rangeBox input[type="range"] {
+    background: linear-gradient(to right, #4caf50 0%, #4caf50 50%, #ddd 50%, #ddd 100%);
+}
+
+.rangeContainer .info {
+    font-weight: bold;
+    color: #b3b3b3;
+    text-align: left;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+/* Modo Escuro */
+.dark {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Header no modo escuro */
+.dark .header .headerItens #darkMode:hover {
+    background-color: rgb(50, 50, 50);
+}
+
+/* Input no modo escuro */
+.dark .article .articleItens .inputBox input {
+    background-color: #333;
+    color: #fff;
+    border: 2px solid #555;
+}
+
+/* Labels e textos */
+.dark .article .articleItens .informations label {
+    color: #ddd;
+}
+
+/* Subtítulo */
+.dark .article .articleItens .subTitle {
+    color: #ffffff;
+}
+
+/* Botão no modo escuro */
+.dark .header .headerItens #darkMode {
+    color: #ffffff;
+}
+
+.dark .rangeBox p.key {
+    color: #ffffff;
+}

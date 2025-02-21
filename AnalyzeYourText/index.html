@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="index.js"></script>    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="headerItens">
+            <h3 class="title">Character Counter</h3>
+            <button id="darkMode">
+                <ion-icon id="iconMode" name="moon-outline"></ion-icon>
+            </button>
+        </div>
+    </header>
+    <article class="article">
+        <div class="articleItens">
+            <h1 class="subTitle">Analyze Your text<br>in real-time.</h1>
+            <div class="inputBox">
+                <textarea type="text" id="textArea" placeholder="Start typing here... (or paste your text) "></textarea>
+            </div>
+            <div class="informations"> 
+                <input type="checkbox" name="excludeSpaces" id="excludeSpaces">
+                <label for="excludeSpaces">Exclude Spaces</label>
+                <input type="checkbox" name="setCharacterLimit" id="setCharacterLimit">
+                <label for="setCharacterLimit">Set Character Limit</label>
+                <p class="readingTime" id="readingTime">
+                    Aprox. reading time: < 0 minutes</p>
+            </div>
+            <div class="textInformations">
+                <div class="totalCharacters">
+                    <p class="number" id="charactersCountNumber">0</p>
+                    <p class="description">Total Characters</p>
+                </div>
+                <div class="wordCount">
+                    <p class="number" id="wordCountNumber">0</p>
+                    <p class="description">Word Count</p>
+                </div>
+                <div class="sentenceCount">
+                    <p class="number" id="sentenceCountNumber">0</p>
+                    <p class="description">Sentence Count</p>
+                </div>
+            </div>
+            <div class="charts">
+                <h4>Letter Density</h4>
+                <div class="rangeBox" id="rangeBox"></div>
+            </div>
+        </div>
+    </article>
+</body>
+</html>
