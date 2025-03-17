@@ -48,7 +48,7 @@ export function Article() {
                     <Card title="Adequate sleep" text="Sleep enhances mental clarity, emotional stability, and physical wellness, promoting overall restoration and rejuvenation"/>
                 </div>
             </div>
-            <div className="mt-48">
+            <div className="py-48">
                 <div className="flex gap-60 justify-center">
                     <div className="flex flex-col w-1/2">
                         <h1 className="text-gray-700 font-bold text-6xl">Limitations of BMI</h1>
@@ -74,7 +74,7 @@ export function Article() {
                         <Card title="Muscle" text="BMI may misclassify muscular individuals as overweight or obese, as it doesn't differentiate muscle from fat"/>
                     </div>
                 </div>
-                <div className="flex my-16 justify-center gap-14 translate-x-1">
+                <div className="flex mt-16 justify-center gap-14 translate-x-1">
                     <div className="flex gap-2 w-96 shadow-xl p-5 rounded-3xl shadow-blue-100">
                         <FontAwesomeIcon icon={faPersonPregnant} className="text-yellow-500 text-3xl"/>
                         <Card title="Pregnancy" text="Expectant mothers experience weight gain due to their growing baby. Maintaining a healthy pre-pregnancy BMI is advisable tominimise health risks for both mother and child."/>
