@@ -74,14 +74,14 @@ export function Input() {
                     <label className="text-gray-700 mb-4" htmlFor="height">Height</label>
                     <div className="flex items-center border-2 border-gray-700 p-3 rounded-xl">  
                         <input className="text-black text-lg p-1 font-bold bg-transparent outline-none placeholder:font-bold placeholder:text-xl placeholder:text-start focus:placeholder-transparent hover:placeholder:text-blue-500" placeholder="0" id="height" name="height" type="text"/>
-                        <span className="text-blue-500 text-lg font-bold ml-2"> {unit === "Metric" ? "CM" : "IN"} </span>
+                        <span className="text-blue-500 text-lg font-bold ml-2 w-5"> {unit === "Metric" ? "CM" : "IN"} </span>
                     </div>
                 </div>
                 <div className="flex flex-col">
                     <label className="text-gray-700 mb-4" htmlFor="weight">Weight</label>
                     <div className="flex items-center border-2 border-gray-700 p-3 rounded-xl">
                         <input className="text-black text-lg p-1 font-bold outline-none bg-transparent placeholder:font-bold placeholder:text-xl placeholder:text-start focus:placeholder-transparent hover:placeholder:text-blue-500" placeholder="0" id="weight" name="weight" type="text"/>
-                        <span className="text-blue-500 text-lg font-bold ml-2"> {unit === "Metric" ? "KG" : "LBS"} </span>
+                        <span className="text-blue-500 text-lg font-bold ml-2 w-5"> {unit === "Metric" ? "KG" : "LB"} </span>
                     </div>
                 </div>
             </div>
